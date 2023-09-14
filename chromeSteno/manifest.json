@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "ChromeSteno",
+  "version": "0.1.0",
+  "description": "Plover as a chrome extension, built from the ground up!",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "plover.png",
+      "48": "plover.png",
+      "128": "plover.png"
+    }
+  },
+  "icons": {
+    "16": "plover.png",
+    "48": "plover.png",
+    "128": "plover.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

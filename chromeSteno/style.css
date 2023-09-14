@@ -1,0 +1,66 @@
+/* Reset some default styles for body and h1 */
+body, h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif; /* Use Nunito Sans or a similar font */
+}
+
+/* Style the h1 header with green background and white text */
+h1 {
+  background-color: #40a37f; /* Green background color */
+  color: white; /* White text color */
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+  display: flex;
+  align-items: center; /* Vertically center content in the header */
+}
+
+/* Style the main content area with white background */
+#main-content {
+  background-color: white;
+  padding: 20px;
+  font-size: 16px;
+  text-align: center; /* Center align the content */
+}
+
+
+.label-container {
+  margin-top: 10px;
+  margin-right: 10px; /* Add right margin to move it to the right */
+  display: inline-block; /* Make label and checkbox appear on the same line */
+}
+
+label {
+  margin: 0; /* Remove any default margin */
+}
+
+input[type="checkbox"] {
+  margin: 0; /* Remove any default margin */
+}
+
+
+
+/* Style the checkbox itself */
+#enableTranslation {
+  margin: 0 auto;
+  display: inline-block; /* Keep the checkbox and label on the same line */
+}
+
+/* Add any additional styling or modifications you'd like here */
+
+/* Add logo to the right of the title */
+h1::after {
+  content: '';
+  display: inline-block;
+  background-image: url('plover.png');
+  background-size: 24px 24px; /* Set the size of the logo */
+  width: 24px; /* Same as background-image width */
+  height: 24px; /* Same as background-image height */
+  margin-left: 10px; /* Add some spacing between the text and logo */
+}
+
+/* Style for additional content */
+#additional-content {
+  margin-top: 20px;
+}
